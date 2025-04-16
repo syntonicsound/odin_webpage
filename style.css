@@ -1,27 +1,58 @@
 body {
 font-family: 'Roboto', sans-serif;
 margin: 0;
+text-align:center;
+box-sizing:border-box;
 }
 
-.header,
-.footer {
+.header {
 background-color: #1F2937;
 color:#fff;
+padding:0 20%;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+
+
+ul {
+  display: flex;
+  list-style: none;
+  gap: 36px
+  
 }
 
 .section1 {
 background-color: #1F2937;
+display:flex;
+align-items: center;
+justify-content: space-between;
+padding: 2% 20%;
+}
+
+.leftside {
+text-align: left;
+padding:20px;
+}
+
+.rightside {
+text-align:center;
+padding:20px;
 }
 
 .section2 {
+padding: 4% 20%;
 
 }
 
 .section3 {
 background-color: #e5e7eb;
+padding: 4% 20%;
 }
 
 .section4 {
+padding: 4% 20%;
 
 }
 
@@ -38,16 +69,30 @@ color: #1f2937;
 font-weight:900;
 }
 
+h4 {
+font-size: 20px;
+font-weight:600;
+margin-bottom:-10px;
+}
+
 p {
 font-size: 16px;
 color: #343e4b;
 font-weight:300;
 }
+ a {
+ text-decoration:none;
+ }
 
+ a:hover {
+ color: #3882f6;
+ text-decoration:underline;
+ }
 
 .headerlogo {
 font-size: 24px;
 color:#F9FAF8;
+
 }
 
 .secondary {
@@ -55,19 +100,36 @@ font-size: 18px;
 color:#e5e7eb;
 }
 
-.secondary:hover {
-color:#3882f6;
-}
+
 
 button {
 background-color: #3882f6;
 color: #fff;
 padding: 10px 20px;
 border: 1px solid #fff;
+border-radius:7px;
 }
 
 button:hover {
 opacity:0.82;
+}
+
+.imagegrid {
+display: flex;
+  justify-content: center;
+  gap: 5%;
+}
+
+.info {
+max-width:200px;
+
+}
+.info-image {
+border:1px solid #3882f6;
+border-radius:7px;
+height:170px;
+width:auto;
+
 }
 
 
@@ -76,6 +138,8 @@ opacity:0.82;
 font-size: 36px;
 font-weight:100;
 color: #1f2937;
+text-align:justify;
+
 }
 
 .quoteauthor {
@@ -83,11 +147,26 @@ font-size: 15px;
 color: #1f2937;
 font-weight: 600;
 text-align :right;
+display: block;
 }
 
 .calltoaction {
 background-color: #3882f6;
+color:#fff;
+border-radius:7px;
+display:flex;
+align-items: center;
+justify-content: space-between;
+padding: 1% 10%;
 }
+
+
+.footer {
+background-color: #1F2937;
+color:#fff;
+padding:2% 20%;
+}
+
 
 .footertext {
 font-size:10px;
